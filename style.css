@@ -1,0 +1,99 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    font-size: 62.5%;
+    font-family: 'Mulish', sans-serif;
+}
+body{
+    font-size: 1.6rem;
+}
+
+#app > *{
+    border: 1px solid red;
+    
+}
+#app{
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    grid-template-rows: auto 1fr auto; 
+    grid-template-areas: 
+      "header header"
+      "main sidebar"
+      "footer footer";
+    gap: 20px;
+  }
+
+header {
+    grid-area: header;
+    
+  }
+  
+  aside {
+    grid-area: sidebar;
+    
+  }
+  
+  main {
+    grid-area: main;
+    
+  }
+  
+  footer {
+    grid-area: footer;
+
+  }
+.container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #065E7C;
+    height: 7.2rem;
+    padding-left: 11rem;
+    padding-right: 11rem;
+}
+.avatar{
+    width: 4.2rem;
+    height: 4.2rem;
+    border-radius: 50%;
+    
+}
+
+.logo{
+    width: 4rem;
+    height: 4rem;
+}
+
+.input-wrapper{
+    flex-grow: 1; /* Permite que o wrapper do input cresça */
+    margin: 0.2rem;
+    width: 110rem;
+    
+}
+.input-wrapper label{
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    position: absolute;
+}
+.input-wrapper input{
+    width: 100%;
+    padding: 1.6rem;
+    background-color: white;
+    border: 0;
+    border-radius: 0.4rem;
+    font-size:1.6rem;
+    font-weight: 600;
+
+
+    
+
+    
+    opacity: 0.56;
+}
+.input-wrapper input:placeholder{
+    color: white;
+}
